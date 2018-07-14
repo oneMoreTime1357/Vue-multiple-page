@@ -26,6 +26,7 @@ exports.entries = function () {
   return map
 }
 
+// 多页面输出配置
 exports.htmlPlugin = function () {
   let entryHtml = glob.sync(PAGE_PATH + '/*/*.ejs')
   let arr = []
