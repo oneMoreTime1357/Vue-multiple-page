@@ -61,7 +61,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
-/**
+    
+/** 注释掉 此组件 HtmlWebpackPlugin 
   *
     new HtmlWebpackPlugin({
       filename: process.env.NODE_ENV === 'testing'
@@ -81,6 +82,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     }),
   *
 **/
+    
     // keep module.id stable when vendor modules does not change
     new webpack.HashedModuleIdsPlugin(),
     // enable scope hoisting
@@ -123,9 +125,11 @@ const webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ])
+    
     // ---------在该位置添加 utils.htmlPlugin()
   ].concat(utils.htmlPlugin())
   // ------------------------------
+  
 })
 
 if (config.build.productionGzip) {
