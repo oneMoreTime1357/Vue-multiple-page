@@ -2,6 +2,8 @@
 
 > A Vue multi page project
 
+环境：
+Vue: 2.5.2  + webpack: 3.6.0 + node > 6
 
 # 解锁 Vue多页面应用
 
